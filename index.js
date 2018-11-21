@@ -24,7 +24,7 @@ function viewCart() {
   }
   else {
     var currentCart = "In your cart, you have "
-    for (i=0; i<cart.length-1; i++) {
+    for (i=0; i<cart.length-1; i++); {
       currentCart += `${cart.itemName[i]} at $\${cart.itemPrice[i]},`
     }
     currentCart += `and ${cart.itemName[i+1]} at $\${cart.itemPrice[i+1]}.`
