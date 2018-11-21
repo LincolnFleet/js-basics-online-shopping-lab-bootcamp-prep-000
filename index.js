@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  var unit = [{itemName: `${item}`, itemPrice: }]
+  cart.push
 }
 
 function viewCart() {
