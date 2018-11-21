@@ -23,9 +23,9 @@ function viewCart() {
   } else {
     var currentCart = "In your cart, you have";
     for (i=0; i<cart.length-1; i++) {
-      currentCart += ` ${cart.itemName[i]} at $\${cart.itemPrice[i]},`
+      currentCart += ` ${cart[i].itemName} at $${cart[i].itemPrice},`
     }
-    currentCart += ` and ${cart.itemName[cart.length-1]} at $\${cart.itemPrice[cart.length-1]}.`
+    currentCart += ` and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}.`
     return currentCart
   }
 }
