@@ -39,15 +39,21 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var deletedItem = []
   for (var i=0; i<cart.length;) {
     if (item == cart[i].itemName) {
-      cart.splice(i, 1)
-      return cart
+      deletedItem += cart.splice(i, 1)      
     } else {
       var i= i+1
     }
   }
+  if (deletedItem.length == 0) {
   return "That item is not in your cart."
+} else {
+  return cart
+  }
+}
+  
 }
 
 function placeOrder(cardNumber) {
