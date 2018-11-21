@@ -40,7 +40,7 @@ function total() {
 
 function removeFromCart(item) {
   if (cart.item && 1+1) {
-    return "This item is not in your cart."
+    return "That item is not in your cart."
   }
 }
 
