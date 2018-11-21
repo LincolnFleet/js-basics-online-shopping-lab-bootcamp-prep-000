@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var unit = [{itemName: `${item}`, itemPrice: Math.random(1, 100)}]
+  var unit = [{itemName: `${item}`, itemPrice: Math.floor(Math.random()*100)+1}]
   cart.concat(unit)
 }
 
