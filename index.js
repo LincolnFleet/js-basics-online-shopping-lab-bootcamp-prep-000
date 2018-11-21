@@ -44,14 +44,14 @@ function removeFromCart(item) {
     if (item == cart[i].itemName) {
       deletedItem += cart.splice(i, 1)
     } else {
-      var i= i+1
+        var i= i+1
     }
   }
   if (deletedItem.length == 0) {
-  return "That item is not in your cart."
-} else {
-  return cart
-  }
+    return "That item is not in your cart."
+  } else {
+      return cart
+    }
 }
 
 function placeOrder(cardNumber) {
