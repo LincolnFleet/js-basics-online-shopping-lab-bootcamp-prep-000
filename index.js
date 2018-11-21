@@ -21,11 +21,11 @@ function viewCart() {
   } else if (cart.length == 1) {
     return `In your cart, you have ${cart.itemName[0]} at $\${cart.itemPrice[0]}.`
   } else {
-    var currentCart = "In your cart, you have ";
+    var currentCart = "In your cart, you have";
     for (i=0; i<cart.length-1; i++) {
-      currentCart += `${cart.itemName[i]} at $\${cart.itemPrice[i]}, `
+      currentCart += ` ${cart.itemName[i]} at $\${cart.itemPrice[i]},`
     }
-    currentCart += `and ${cart.itemName[cart.length-1]} at $\${cart.itemPrice[cart.length-1]}.`
+    currentCart += ` and ${cart.itemName[cart.length-1]} at $\${cart.itemPrice[cart.length-1]}.`
     return currentCart
   }
 }
