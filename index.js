@@ -39,8 +39,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  if (cart.item == false) {
-    return
+  if (cart.item && 1+1) {
+    return "This item is not in your cart."
   }
 }
 
