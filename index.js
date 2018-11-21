@@ -31,7 +31,7 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  return cart["itemPrice"].sum
 }
 
 function removeFromCart(item) {
