@@ -18,7 +18,7 @@ function addToCart(item) {
 function viewCart() {
   if (cart.length == 0) {
     return "Your shopping cart is empty."
-  } elseif (cart.length == 1) {
+  } else if (cart.length == 1) {
     return `In your cart, you have ${cart.itemName[0]} at $\${cart.itemPrice[0]}.`
   } else {
     var currentCart = "In your cart, you have ";
