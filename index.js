@@ -20,13 +20,14 @@ function viewCart() {
     return "Your shopping cart is empty."
   }
   elseif (cart.length == 1) {
-    return `In your cart, you have ${cart.itemName} at $\${cart.itemPrice}.`
+    return `In your cart, you have ${cart.itemName[0]} at $\${cart.itemPrice[0]}.`
   }
   else {
-    var currentCart = "In your cart, you have"
+    var currentCart = "In your cart, you have "
     for (i=0; i<cart.length-1; i++) {
-      
+      currentCart += `${cart.itemName[i]} at $\${cart.itemPrice[i]},`
     }
+    currentCart += `and ${cart.itemName[i+1]} at $\${cart.itemPrice[i+1]}.`
   }
 }
 
