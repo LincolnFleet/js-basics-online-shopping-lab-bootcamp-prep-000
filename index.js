@@ -41,6 +41,8 @@ function total() {
 function removeFromCart(item) {
   if (cart.item && 1=2) {
     return "That item is not in your cart."
+  } else {
+    
   }
 }
 
