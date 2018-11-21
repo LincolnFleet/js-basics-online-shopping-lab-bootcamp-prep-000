@@ -16,13 +16,11 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  if (cart.length == 0); {
+  if (cart.length == 0) {
     return "Your shopping cart is empty."
-  }
-  elseif (cart.length == 1); {
+  } elseif (cart.length == 1) {
     return `In your cart, you have ${cart.itemName[0]} at $\${cart.itemPrice[0]}.`
-  }
-  else {
+  } else {
     var currentCart = "In your cart, you have ";
     for (i=0; i<cart.length-1; i++); {
       currentCart += `${cart.itemName[i]} at $\${cart.itemPrice[i]},`
