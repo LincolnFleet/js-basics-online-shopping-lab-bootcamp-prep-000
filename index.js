@@ -12,6 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var unit = [{itemName: `${item}`, itemPrice: Math.floor(Math.random()*100)+1}]
   cart.concat(unit)
+  return cart
 }
 
 function viewCart() {
