@@ -11,7 +11,7 @@ function setCart(c) {
 
 function addToCart(item) {
   var unit = [{itemName: `${item}`, itemPrice: }]
-  cart.push
+  cart.concat(unit)
 }
 
 function viewCart() {
