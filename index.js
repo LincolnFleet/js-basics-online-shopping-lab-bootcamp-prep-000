@@ -28,6 +28,7 @@ function viewCart() {
       currentCart += `${cart.itemName[i]} at $\${cart.itemPrice[i]},`
     }
     currentCart += `and ${cart.itemName[i+1]} at $\${cart.itemPrice[i+1]}.`
+    return currentCart
   }
 }
 
