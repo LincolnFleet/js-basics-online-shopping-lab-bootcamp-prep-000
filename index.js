@@ -42,7 +42,7 @@ function removeFromCart(item) {
   var deletedItem = []
   for (var i=0; i<cart.length;) {
     if (item == cart[i].itemName) {
-      deletedItem += cart.splice(i, 1)      
+      deletedItem += cart.splice(i, 1)
     } else {
       var i= i+1
     }
@@ -53,7 +53,7 @@ function removeFromCart(item) {
   return cart
   }
 }
-  
+
 }
 
 function placeOrder(cardNumber) {
