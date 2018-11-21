@@ -33,7 +33,7 @@ function viewCart() {
 function total() {
   var cartSum = 0;
   for (var i=0; i<cart.length-1; i++) {
-    cartSum = parsInt(cartSum) + parsInt(cart[i].itemPrice)
+    cartSum = parseInt(cartSum) + parseInt(cart[i].itemPrice)
   }
   return cartSum
 }
